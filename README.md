@@ -86,6 +86,21 @@ Recall for rejected loans (class 0) is moderate but consistent.
 
 Small difference between train and test metrics indicates no severe overfitting.
 
+Random Forest
+
+| Dataset | Accuracy | ROC AUC | Observations                                                       |
+| ------- | -------- | ------- | ------------------------------------------------------------------ |
+| Train   | 100%     | 1.0     | Perfect fit on training data (possible overfitting)                |
+| Test    | 78.0%    | 0.702   | High recall for approved loans; moderate recall for rejected loans |
+
+Key Insights:
+
+Both models perform better on approved loans (class 1).
+
+Recall for rejected loans (class 0) is moderate but consistent.
+
+Logistic Regression generalizes better, while Random Forest shows perfect training accuracy but slightly lower test performance, indicating some overfitting.
+
 🔮 Future Work
 
 Feature engineering to improve prediction for rejected loans
